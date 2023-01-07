@@ -63,6 +63,7 @@ body {
 .product__price__main {
   color: #208968;
   font-size: 1.8rem;
+  font-family: "Fraunces", Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
 }
 
