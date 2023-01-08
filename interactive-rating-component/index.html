@@ -20,37 +20,40 @@
 
 <body>
   <main class="rating">
-    <form name="ratingComponent" method="POST" action="/" class="vertical">
+    <div class="vertical" id="rating-form">
       <img src="icons/icon-star.svg" alt="A decorative star icon" class="rating__icon">
       <h1 class="rating__title">How did we do?</h1>
       <p class="rating__description">
         Please let us know how did we do with your support request. All feedback is appreciated to help us improve our
         offering!
       </p>
-      <ul class="rating__rates">
-        <li><label class="rating__rates-option">
+      <form name="ratingComponent" method="POST" action="/" class="vertical">
+        <fieldset class="rating__rates">
+          <legend class="sr-only">Choose your rating</legend>
+          <label class="rating__rates-option">
             <input type="radio" class="rating__rates-input" name="rating-rate" value="1">
             1
-          </label></li>
-        <li><label class="rating__rates-option">
+          </label>
+          <label class="rating__rates-option">
             <input type="radio" class="rating__rates-input" name="rating-rate" value="2">
             2
-          </label></li>
-        <li><label class="rating__rates-option">
+          </label>
+          <label class="rating__rates-option">
             <input type="radio" class="rating__rates-input" name="rating-rate" value="3">
             3
-          </label></li>
-        <li><label class="rating__rates-option">
+          </label>
+          <label class="rating__rates-option">
             <input type="radio" class="rating__rates-input" name="rating-rate" value="4">
             4
-          </label></li>
-        <li><label class="rating__rates-option">
+          </label>
+          <label class="rating__rates-option">
             <input type="radio" class="rating__rates-input" name="rating-rate" value="5">
             5
-          </label></li>
-      </ul>
-      <button type="submit" class="rating__submit-button">Submit</button>
-    </form>
+          </label>
+        </fieldset>
+        <button type="submit" class="rating__submit-button">Submit</button>
+      </form>
+    </div>
 
     <div class="vertical center hidden" id="thankyou">
       <img src="images/illustration-thank-you.svg" alt="An illustration of a device">

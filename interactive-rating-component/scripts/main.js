@@ -1,11 +1,12 @@
-const form = document.forms.ratingComponent;
-const thankyou = document.querySelector('#thankyou')
-const selectionValue = thankyou.querySelector('.rating__selection-value')
+const formParent = document.querySelector('#rating-form');
+const thankyou = document.querySelector('#thankyou');
+const selectionValue = thankyou.querySelector('.rating__selection-value');
 
+const form = document.forms.ratingComponent;
 const handleSubmit = (e) => {
   e.preventDefault();
   const rate = form.elements['rating-rate'];
-  form.classList.add('hidden');
+  formParent.classList.add('hidden');
   selectionValue.textContent = rate.value;
   thankyou.classList.remove('hidden');
 };
