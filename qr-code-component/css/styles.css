@@ -62,5 +62,6 @@ a {
 
 .attribution {
   margin-top: auto;
+  color: var(--blue-700);
   padding: 1em;
 }
