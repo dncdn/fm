@@ -137,13 +137,13 @@ a:hover {
 
 @media screen and (min-width: 600px) {
   .order-summary {
-    max-width: 30em;
+    max-width: 24em;
   }
   .order-summary__content {
-    padding: 3em;
+    padding: 2em 3em;
   }
   .order-summary__description {
-    margin-inline: 2.5em;
+    margin-inline: 0.5em;
   }
   .order-summary__plan {
     padding-inline: 1.5em;
