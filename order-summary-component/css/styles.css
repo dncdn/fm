@@ -145,4 +145,7 @@ a:hover {
   .order-summary__description {
     margin-inline: 2.5em;
   }
+  .order-summary__plan {
+    padding-inline: 1.5em;
+  }
 }
