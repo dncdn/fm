@@ -36,7 +36,7 @@ body {
 .product__category {
   text-transform: uppercase;
   color: #888595;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   font-size: 0.9rem;
 }
 
@@ -44,12 +44,13 @@ body {
   font-family: "Fraunces", Georgia, "Times New Roman", Times, serif;
   color: #1c222b;
   font-size: 2rem;
+  line-height: 1;
   margin: 0.8rem 0;
 }
 
 .product__description {
   color: #888595;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .product__price {
