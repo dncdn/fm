@@ -2,6 +2,7 @@
   /* Colors */
   --white: hsl(0, 0%, 100%);
   --gray-100: hsl(212, 45%, 89%);
+  --blue-50: hsl(221, 41%, 84%);
   --blue-100: hsl(220, 15%, 55%);
   --blue-400: hsl(237, 100%, 67%);
   --blue-700: hsl(218, 44%, 22%);
@@ -41,6 +42,7 @@ a {
   margin-top: auto;
   text-align: center;
   color: var(--blue-100);
+  box-shadow: 0 10px 30px var(--blue-50);
 }
 
 .qr-code__code {
