@@ -1,0 +1,134 @@
+:root {
+  /* Colors */
+  --white: hsl(0, 0%, 100%);
+  --blue-100: hsl(225, 100%, 98%);
+  --blue-200: hsl(225, 100%, 94%);
+  --blue-300: hsl(224, 23%, 55%);
+  --blue-350: hsl(270, 91%, 55%);
+  --blue-400: hsl(245, 75%, 52%);
+  --blue-500: hsl(223, 47%, 23%);
+
+  /* Fonts */
+  --font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+  --font-size: 1rem; /* 16px */
+}
+
+body {
+  background: var(--blue-200);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--blue-500);
+
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--blue-400);
+}
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: var(--blue-350);
+}
+
+.order-summary {
+  --radius: 1.5em;
+  background: var(--white);
+  border-radius: var(--radius);
+  max-width: 20.5em;
+  margin-top: auto;
+}
+
+.order-summary__banner {
+  width: 100%;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.order-summary__content {
+  padding: 1.5em;
+  text-align: center;
+
+  display: grid;
+  gap: 1.25em;
+}
+.order-summary__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.order-summary__description {
+  margin: 0;
+  margin-inline: 0.25rem;
+  color: var(--blue-300);
+}
+.order-summary__plan {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  background: var(--blue-100);
+  border-radius: 1em;
+}
+.order-summary__plan-icon {
+}
+.order-summary__plan-info {
+  font-size: 0.9rem;
+  display: grid;
+  gap: 0.25em;
+}
+.order-summary__plan-title {
+  font-size: inherit;
+  margin: 0;
+}
+.order-summary__plan-price {
+  color: var(--blue-300);
+}
+.order-summary__plan-change-action {
+  margin-left: auto;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.order-summary__buttons {
+  display: grid;
+  gap: 0.5em;
+  margin-bottom: -0.5em;
+}
+
+.order-summary__button {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: var(--font-size);
+  padding: 1em;
+  border-radius: 0.75em;
+  border: 0;
+  background: transparent;
+  color: var(--blue-300);
+}
+.order-summary__button:hover {
+  color: var(--blue-500);
+}
+
+.order-summary__button--main {
+  background: var(--blue-400);
+  color: var(--blue-100);
+  box-shadow: 0 20px 20px var(--blue-200);
+}
+
+.order-summary__button--main:hover {
+  background: var(--blue-350);
+  color: var(--blue-100);
+}
+
+.attribution {
+  margin-top: auto;
+  padding: 1rem;
+}
