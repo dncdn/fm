@@ -1,0 +1,125 @@
+:root {
+  /* Colors */
+  --white: hsl(0, 0%, 100%);
+  --primary: hsl(25, 97%, 53%);
+  --gray-300: hsl(217, 12%, 63%);
+  --gray-400: hsl(216, 12%, 54%);
+  --blue-700: hsl(213, 19%, 18%);
+  --blue-800: hsl(225, 25%, 13%);
+  --blue-900: hsl(216, 12%, 8%);
+
+  /* Font sizes */
+  --body-copy: 0.9375rem; /* 15px */
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--blue-900);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--body-copy);
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+}
+
+button,
+label {
+  cursor: pointer;
+  font: inherit;
+}
+
+.vertical {
+  display: grid;
+  gap: 1rem;
+}
+
+.center {
+  text-align: center;
+  justify-items: center;
+}
+
+.rating {
+  background: radial-gradient(
+    circle at 50% 0%,
+    var(--blue-700),
+    var(--blue-800)
+  );
+  max-width: 20rem;
+  padding: 2em;
+  border-radius: 1em;
+  color: var(--gray-300);
+}
+.rating__icon {
+  padding: 1rem;
+  background: var(--blue-700);
+  border-radius: 50%;
+}
+.rating__selection {
+  background: var(--blue-700);
+  color: var(--primary);
+  padding: 0.75em 0.75em 0.5em;
+  line-height: 1;
+  border-radius: 5em;
+}
+.rating__title {
+  color: var(--white);
+}
+.rating__description {
+  line-height: 1.5;
+}
+.rating__rates {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.rating__rates-input {
+  width: 0;
+  height: 0;
+}
+.rating__rates-option {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  border: 0;
+  color: inherit;
+  background: var(--blue-700);
+}
+.rating__rates-option:focus-within {
+  background: var(--gray-300);
+  color: var(--white);
+}
+.rating__rates-option:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+.rating__submit-button {
+  background: var(--primary);
+  border: 0;
+  text-transform: uppercase;
+  padding: 0.75em;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  color: var(--white);
+  width: 100%;
+  border-radius: 3em;
+}
+.rating__submit-button:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.hidden {
+  display: none;
+}
