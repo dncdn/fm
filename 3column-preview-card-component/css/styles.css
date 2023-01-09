@@ -88,13 +88,13 @@ a {
   --primary: black;
   background: var(--primary);
 }
-:is(.card, a):nth-child(n) {
+.card:nth-child(n) {
   --primary: var(--clr-card-1);
 }
-:is(.card, a):nth-child(2n) {
+.card:nth-child(2n) {
   --primary: var(--clr-card-2);
 }
-:is(.card, a):nth-child(3n) {
+.card:nth-child(3n) {
   --primary: var(--clr-card-3);
 }
 .card__title {
@@ -107,6 +107,8 @@ a {
 }
 .button {
   border: 0;
+  background: var(--clr-white);
+  text-decoration: none;
   border-radius: 3rem;
   padding: 0.75em 1.75em;
   color: var(--primary);
