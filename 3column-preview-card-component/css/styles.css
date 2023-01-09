@@ -58,12 +58,14 @@ h6 {
   --clr-white: hsl(0, 0%, 100%);
   --clr-body-bg: hsl(0, 0%, 95%);
   --font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  --font-size: 0.9375rem;
   --clr-card-1: #e88305;
   --clr-card-2: #006c73;
   --clr-card-3: #00443f;
 }
 body {
   font-family: var(--font-family);
+  font-size: var(--font-size);
   background: var(--clr-body-bg);
   height: auto;
 }
