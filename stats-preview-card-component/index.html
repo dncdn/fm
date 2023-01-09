@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="page">
+  <main class="stats-preview page-content">
+    <picture class="stats-preview__banner">
+      <source media="(min-width: 600px)" src="images/image-header-desktop.jpg">
+      <img src="images/image-header-mobile.jpg" alt="">
+    </picture>
+    <div class="stats-preview__content">
+      <h1 class="stats-preview__title">
+        Get <span class="stats-preview__title--highlight">insights</span> that help your business grow.
+      </h1>
+      <p class="stats-preview__description">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and
+        overall efficiency.
+      </p>
+      <ul class="stats-preview__statistics" aria-label="Statistics">
+        <li>
+          <h3 class="statistics">
+            <div class="statistics__statistic">10k+</div> companies
+          </h3>
+        </li>
+        <li>
+          <h3 class="statistics">
+            <div class="statistics__statistic">314</div> templates
+          </h3>
+        </li>
+        <li>
+          <h3 class="statistics">
+            <div class="statistics__statistic">12M+</div> queries
+          </h3>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/niftydan">Daniel Nora</a>.
+  </footer>
+</body>
+
+</html>

@@ -15,7 +15,10 @@
 }
 
 body {
-  background: var(--blue-200);
+  background-color: var(--blue-200);
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   font-family: var(--font-family);
   font-size: var(--font-size);
   color: var(--blue-500);
@@ -82,7 +85,9 @@ a:hover {
   border-radius: 1em;
 }
 .order-summary__plan-icon {
+  user-select: none;
 }
+
 .order-summary__plan-info {
   font-size: 0.9rem;
   display: grid;
@@ -90,6 +95,7 @@ a:hover {
 }
 .order-summary__plan-title {
   font-size: inherit;
+  font-weight: bold;
   margin: 0;
 }
 .order-summary__plan-price {
@@ -137,7 +143,10 @@ a:hover {
   padding: 1rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
   .order-summary {
     max-width: 24em;
   }
