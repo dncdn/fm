@@ -1,0 +1,87 @@
+/* For attribution */
+.page {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  margin: 0;
+  padding: 1rem;
+}
+.attribution {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Custom CSS */
+:root {
+  --font-family: 'Kumbh Sans', Arial, Helvetica, sans-serif;
+}
+body {
+  font-family: var(--font-family);
+  background: lightskyblue;
+}
+.profile-card {
+  width: 90vw;
+  border-radius: 1em;
+  background: white;
+  overflow: hidden;
+}
+.profile-card:before {
+  content: '';
+  background-image: url(../images/bg-pattern-card.svg);
+  display: block;
+  height: 150px;
+  width: 100%;
+}
+.profile-card__avatar {
+  border-radius: 50%;
+  position: relative;
+  margin-top: -14%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid white;
+}
+.profile-card__user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+.profile-card__name {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.profile-card__age {
+  font-size: 1.15rem;
+  color: #999;
+  margin: 0;
+}
+.profile-card__location {
+  text-align: center;
+  margin: 0;
+  font-size: .9rem;
+  color: #888;
+  margin-block: .5rem 1.4rem;
+}
+
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding: 1.5rem;
+}
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  gap: .3em;
+}
+.statistic__number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.statistic__label {
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
