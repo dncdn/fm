@@ -1,0 +1,125 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* For attribution */
+.page {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  margin: 0;
+  padding: 1rem;
+}
+.attribution {
+  text-align: center;
+  padding: 1rem;
+}
+/* Custom CSS */
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-body-bg: hsl(0, 0%, 95%);
+  --font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  --clr-card-1: #e88305;
+  --clr-card-2: #006c73;
+  --clr-card-3: #00443f;
+}
+body {
+  font-family: var(--font-family);
+  background: var(--clr-body-bg);
+  height: auto;
+}
+a {
+  color: var(--primary);
+}
+.three-cols {
+  display: grid;
+  width: 100%;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.75em;
+  padding: 3em;
+  color: var(--clr-white);
+  --primary: black;
+  background: var(--primary);
+}
+:is(.card, a):nth-child(n) {
+  --primary: var(--clr-card-1);
+}
+:is(.card, a):nth-child(2n) {
+  --primary: var(--clr-card-2);
+}
+:is(.card, a):nth-child(3n) {
+  --primary: var(--clr-card-3);
+}
+.card__title {
+  font-family: "Big Shoulders Display";
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.card__description {
+  opacity: 0.75;
+}
+.button {
+  border: 0;
+  border-radius: 3rem;
+  padding: 0.75em 1.75em;
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: bold;
+}
+.button:hover {
+  background: transparent;
+  color: var(--clr-white);
+  box-shadow: inset 0 0 0 3px var(--clr-white);
+}
+
+@media screen and (min-width: 37.5em) {
+  .three-cols {
+    max-width: 60em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
