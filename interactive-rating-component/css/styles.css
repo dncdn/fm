@@ -156,3 +156,16 @@ label {
   padding: 1rem;
   color: inherit;
 }
+
+/* For centering content */
+.page {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+.page-content {
+  margin-top: auto;
+}
