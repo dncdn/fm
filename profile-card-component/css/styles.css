@@ -29,7 +29,7 @@ a {
   background: var(--clr-white);
   overflow: hidden;
   position: relative;
-  box-shadow: 0 30px 40px 10px hsl(0 0% 0% / 15%);
+  box-shadow: 0 30px 40px hsl(0 0% 0% / 15%);
 }
 .profile-card:before {
   content: '';
