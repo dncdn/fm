@@ -36,6 +36,9 @@ body {
 a {
   color: var(--primary);
 }
+a:hover {
+  color: var(--white);
+}
 
 button,
 label {
